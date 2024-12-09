@@ -18,7 +18,7 @@
 		h2 {
             color: #333;
         }
-		.container {
+        .container {
             max-width: 800px;
             margin: 0 auto;
         }
@@ -27,6 +27,23 @@
 <body>
     <div class="container">
         <h1>SCM Tools Comparative Analysis: Git vs Mercurial</h1>
+
+        <h2>Git Workflow</h2>
+        <ol>
+            <li>Clone the repository: <code>git clone https://github.com/user/repo.git</code></li>
+            <li>Create a new branch: <code>git checkout -b bugfix-branch</code></li>
+            <li>Make changes and commit: <code>git add .</code> and <code>git commit -m "Fix bug in feature X"</code></li>
+            <li>Push changes: <code>git push origin bugfix-branch</code></li>
+        </ol>
+
+        <h2>Mercurial Workflow</h2>
+        <ol>
+            <li>Clone the repository: <code>hg clone https://example.com/hg/repo</code></li>
+            <li>Create a new branch: <code>hg branch bugfix-branch</code></li>
+            <li>Make changes and commit: <code>hg add</code> and <code>hg commit -m "Fix bug in feature X"</code></li>
+            <li>Push changes: <code>hg push</code></li>
+        </ol>
+
     </div>
 </body>
 </html>

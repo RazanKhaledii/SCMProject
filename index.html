@@ -8,15 +8,23 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-			background-color: #f5f5f5;
         }
-        h1{
-            color: #fff;
-			background-color: #000;
-			padding: 5px;
-        }
-		h2 {
+        h1, h2 {
             color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
         }
         .container {
             max-width: 800px;
@@ -44,6 +52,39 @@
             <li>Push changes: <code>hg push</code></li>
         </ol>
 
+        <h2>Comparative Analysis</h2>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Git</th>
+                <th>Mercurial</th>
+            </tr>
+            <tr>
+                <td>Performance</td>
+                <td>Fast, efficient</td>
+                <td>Slightly slower</td>
+            </tr>
+            <tr>
+                <td>Ease of Use</td>
+                <td>Steeper learning curve</td>
+                <td>Easier for beginners</td>
+            </tr>
+            <tr>
+                <td>Scalability</td>
+                <td>Highly scalable</td>
+                <td>Scalable but less popular</td>
+            </tr>
+            <tr>
+                <td>Integration</td>
+                <td>Extensive tool integration</td>
+                <td>Good, but less extensive</td>
+            </tr>
+            <tr>
+                <td>Community Support</td>
+                <td>Large community, extensive resources</td>
+                <td>Smaller community, adequate resources</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
